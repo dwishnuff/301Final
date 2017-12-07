@@ -1,0 +1,22 @@
+#logo {
+  text-align: center;
+}
+
+#screenshot {
+  border-style: dotted;
+  border-color: red;
+  width: 80%%;
+  height: 500px;
+}
+
+#screenshot p {
+  text-align: center;
+
+  }
+
+#create {
+  padding-top: 50px;
+  text-decoration: none;
+  align-items: right;
+
+}
