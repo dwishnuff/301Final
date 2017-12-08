@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Formula</title>
+    <title>Me + You - Create</title>
+    <meta name="description" content="Me + You CREATE">
+    <meta name="author" content="Danielle W. Beyer, Heather Knight, Jeffrey Lonergan">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="scripts/script.js"></script>
   </head>
 <body>
+  <h1> Me + You banner</h1>
+  <h2> Let's get started </h2>
     <h3>First, we need your photos.  Please sign in to the photo provider of your choice.<h3>
       <div id="apiButtons">
-        <p>PLACEHOLDER FOR API BUTTONS</p>
+        <!-- <p>PLACEHOLDER FOR API BUTTONS</p> -->
+        <input type = "button" value="Instagram">
+        <input type = "button" value ="Picasa">
+
       </div>
       <div id="photoSelector">
         <p>PLACEHOLDER FOR PHOTO SELECTOR</p>
       </div>
       <div id="photoPreview">
-        <p>PLACEHOLDER FOR PHOTO PREVIEW</p>
+        <div class="photoSize">
+        <img src="images/Corey.jpg">
+      </div>
+        <span class="operator">+</span>
+        <div class="photoSize">
+        <img src="images/Dani-Jamie2.jpg">
+      </div>
+        <span class="operator">=</span>
+        <div class="photoSize">
+        <img src="images/AllOfUs.jpg">
+      </div>
+        <span class="operator">-</span>
+        <div class="photoSize">
+        <img src="images/JamieSad.jpg">
+      </div>
+        <span class="operator">=</span>
+        <div class="photoSize">
+        <img src="images/Hotel.jpg">
+      </div>
+
       </div>
       <div id="finalPhoto">
         <p>PLACEHOLDER FOR FINAL PHOTO</p>
@@ -30,7 +57,9 @@
         <textarea name="message" rows="20" cols="50">
         </textarea>
         <br>
-        <button type="button" onclick="submit">Preview</button>
+        <form id ="create">
+          <input type = "button" value="Make it pretty" onclick="window.location.href = 'preview.html'">
+        </form>
       </div>
 
 
@@ -43,4 +72,5 @@
 6. Preview button -->
 
   </body>
+  <footer> Add footer </footer>
 </html>
