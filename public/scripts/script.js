@@ -29,5 +29,5 @@ function copyURL() {
   }
 });
 
-document.getElementById("displayURL").innerText=url;
+document.getElementById("displayURL").value=url;
 };
