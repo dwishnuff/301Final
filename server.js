@@ -8,6 +8,12 @@ const client = new pg.Client(conString); //create new client that will connect w
 
 client.connect(); //connecting method.
 
+var NounProject = require('the-noun-project'),
+nounProject = new NounProject({
+    key: '3e46b66b4dfd49129debc620f11902fe',
+    secret: '2023bb32e9774e10a91740bb0c115adb'
+});
+
 function loadGreeting() {
   fs.readFile('./data/me+you_data.json',(err, fd) => {
     JSON.parse(fd.toString()).forEach((ele) => {
