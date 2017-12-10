@@ -15,7 +15,6 @@ window.addEventListener("resize",function(){
   document.getElementById('photoPreview').style.fontSize=height+"%";
 });
 }
-
 //script for loading share URL
 
 function copyURL() {
