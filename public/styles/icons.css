@@ -27,7 +27,7 @@
 .icon-checklist:before {
   content: "\f076";
 }
-.icon-clippy:before {
+.icon-clippy:after {
   content: "\f035";
 }
 .icon-repo-forked:before {
