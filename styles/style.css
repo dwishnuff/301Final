@@ -1,3 +1,6 @@
+@import "icons.css"; /*to get icons file*/
+
+
 #logo {
   text-align: center;
 }
@@ -25,7 +28,6 @@
 
 #photoPreview {
   background: #133468;
-  /*display: flex;*/
   vertical-align: middle;
   height: 16em;
   width: 100%;
