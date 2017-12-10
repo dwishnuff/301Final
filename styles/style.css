@@ -1,18 +1,10 @@
 
 @import "searchbar.css"; /*to get searchbar styles*/
 @import "icons.css"; /*to get icons file*/
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Oswald'); /*import google font*/
 
-body {
-  font-family: 'Barlow Condensed', sans-serif;
-}
 
-footer {
-  text-align: center;
-  margin: 0 auto;
-}
 
-.banner {
+#logo {
   text-align: center;
 }
 
@@ -68,9 +60,7 @@ footer {
   bottom: 0;
   margin: auto;*/
   vertical-align: middle;
-  font-size: 8em;
-  color: white;
-
+  font-size: 3em;
 }
 
 img {
@@ -86,14 +76,11 @@ img {
 }
 
 h1 {
-  font-family: 'Oswald', sans-serif;
   font-size: 100px;
   font-weight: bold;
   color: #d87913;
   text-decoration: none;
 }
-
-
 
 a {
   text-decoration: none;
