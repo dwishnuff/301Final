@@ -3,8 +3,8 @@
 }
 
 .screenshot {
-  border-style: dotted;
-  border-color: red;
+  border-style: solid;
+  border-color: #133468;
   width: 80%%;
   height: 500px;
 }
