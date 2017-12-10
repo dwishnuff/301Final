@@ -1,0 +1,57 @@
+[
+  {
+    "email":"me+you@gmail.com",
+    "greeting_message": "This is your greeting message",
+    "messages":[
+      {
+        "position": 1,
+        "img_source": "../images/Corey.jpg",
+        "operator":"+"
+      },
+      {  "position": 2,
+        "img_source": "../images/Dani-Jamie2.jpg",
+        "operator":"="
+      },
+      {  "position": 3,
+        "img_source": "../images/AllofUs.jpg",
+        "operator":"-"
+      },
+      {  "position": 4,
+        "img_source": "../images/JamieSad.jpg",
+        "operator":"="
+      },
+      {  "position": 5,
+        "img_source": "../images/Hotel.jpg",
+        "operator":""
+      }
+    ]
+  },
+
+  {
+    "email":"jeff+Christy@gmail.com",
+    "greeting_message": "This is your greeting message #2",
+    "messages":[
+      {
+        "position": 1,
+        "img_source": "../images/Corey.jpg",
+        "operator":"+"
+      },
+      {  "position": 2,
+        "img_source": "../images/Dani-Jamie2.jpg",
+        "operator":"="
+      },
+      {  "position": 3,
+        "img_source": "../images/AllofUs.jpg",
+        "operator":"-"
+      },
+      {  "position": 4,
+        "img_source": "../images/JamieSad.jpg",
+        "operator":"="
+      },
+      {  "position": 5,
+        "img_source": "../images/Hotel.jpg",
+        "operator":""
+      }
+    ]
+  }
+]

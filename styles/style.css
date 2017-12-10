@@ -1,12 +1,16 @@
-@import "searchbar.css";
+
+@import "searchbar.css"; /*to get searchbar styles*/
+@import "icons.css"; /*to get icons file*/
+
+
 
 #logo {
   text-align: center;
 }
 
 .screenshot {
-  border-style: dotted;
-  border-color: red;
+  border-style: solid;
+  border-color: #133468;
   width: 80%%;
   height: 500px;
 }
@@ -27,7 +31,6 @@
 
 #photoPreview {
   background: #133468;
-  /*display: flex;*/
   vertical-align: middle;
   height: 16em;
   width: 100%;

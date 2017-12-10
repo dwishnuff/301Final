@@ -4,7 +4,8 @@ function getPreviewHeight () {
     return innerWidth/1920*100;
 }
 
-window.addEventListener("load",function(){
+function addResize () {
+  window.addEventListener("load",function(){
   var height = getPreviewHeight();
   document.getElementById('photoPreview').style.fontSize=height+"%";
 })
@@ -12,4 +13,21 @@ window.addEventListener("load",function(){
 window.addEventListener("resize",function(){
   var height = getPreviewHeight();
   document.getElementById('photoPreview').style.fontSize=height+"%";
-})
+});
+}
+
+//script for loading share URL
+
+function copyURL() {
+
+  var url = document.location.href;
+
+
+  new Clipboard('#copyButton', {
+  text: function() {
+    return url;
+  }
+});
+
+document.getElementById("displayURL").innerText=url;
+};
