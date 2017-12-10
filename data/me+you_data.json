@@ -1,0 +1,63 @@
+[
+
+{
+
+"greeting_id":,
+"email":,
+"greeting_message":,
+"message_id":,
+"operator":,
+"position":,
+"img_source": "../images/AllofUs.jpg",
+
+}
+{
+  "greeting_id":,
+  "email":,
+  "greeting_message":,
+  "message_id":,
+  "operator":,
+  "position":,
+ "img_source":"../images/Corey.jpg",
+
+}
+{
+  "greeting_id":,
+  "email":,
+  "greeting_message":,
+  "message_id":,
+  "operator":,
+  "position":,
+"img_source":"../images/Dani-Jamie.jpg",
+
+}
+{
+  "greeting_id":,
+  "email":,
+  "greeting_message":,
+  "message_id":,
+  "operator":,
+  "position":,
+"img_source":"../images/Dani-Jamie2.jpg",
+
+}
+{
+  "greeting_id":,
+  "email":,
+  "greeting_message":,
+  "message_id":,
+  "operator":,
+  "position":,
+  "img_source":"../images/Hotel.jpg",
+}
+{
+  "greeting_id":,
+  "email":,
+  "greeting_message":,
+  "message_id":,
+  "operator":,
+  "position":,
+  "img_source":"../images/JamieSad.jpg",
+}
+
+]
