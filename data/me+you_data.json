@@ -1,63 +1,57 @@
 [
-
   {
-
-    "greeting_id": "",
-    "email":"",
-    "greeting_message": "",
-    "message_id":"",
-    "operator":"",
-    "position":"",
-    "img_source": "../images/AllofUs.jpg"
-
+    "email":"me+you@gmail.com",
+    "greeting_message": "This is your greeting message",
+    "messages":[
+      {
+        "position": 1,
+        "img_source": "../images/Corey.jpg",
+        "operator":"+"
+      },
+      {  "position": 2,
+        "img_source": "../images/Dani-Jamie2.jpg",
+        "operator":"="
+      },
+      {  "position": 3,
+        "img_source": "../images/AllofUs.jpg",
+        "operator":"-"
+      },
+      {  "position": 4,
+        "img_source": "../images/JamieSad.jpg",
+        "operator":"="
+      },
+      {  "position": 5,
+        "img_source": "../images/Hotel.jpg",
+        "operator":""
+      }
+    ]
   },
-  {
-    "greeting_id":"",
-    "email":"",
-    "greeting_message":"",
-    "message_id":"",
-    "operator":"",
-    "position":"",
-    "img_source":"../images/Corey.jpg"
 
-  },
   {
-    "greeting_id":"",
-    "email":"",
-    "greeting_message":"",
-    "message_id":"",
-    "operator":"",
-    "position":"",
-    "img_source":"../images/Dani-Jamie.jpg"
-
-  },
-  {
-    "greeting_id":"",
-    "email":"",
-    "greeting_message":"",
-    "message_id":"",
-    "operator":"",
-    "position":"",
-    "img_source":"../images/Dani-Jamie2.jpg"
-
-  },
-  {
-    "greeting_id":"",
-    "email":"",
-    "greeting_message":"",
-    "message_id":"",
-    "operator":"",
-    "position":"",
-    "img_source":"../images/Hotel.jpg"
-  },
-  {
-    "greeting_id":"",
-    "email":"",
-    "greeting_message":"",
-    "message_id":"",
-    "operator":"",
-    "position":"",
-    "img_source":"../images/JamieSad.jpg"
+    "email":"jeff+Christy@gmail.com",
+    "greeting_message": "This is your greeting message #2",
+    "messages":[
+      {
+        "position": 1,
+        "img_source": "../images/Corey.jpg",
+        "operator":"+"
+      },
+      {  "position": 2,
+        "img_source": "../images/Dani-Jamie2.jpg",
+        "operator":"="
+      },
+      {  "position": 3,
+        "img_source": "../images/AllofUs.jpg",
+        "operator":"-"
+      },
+      {  "position": 4,
+        "img_source": "../images/JamieSad.jpg",
+        "operator":"="
+      },
+      {  "position": 5,
+        "img_source": "../images/Hotel.jpg",
+        "operator":""
+      }
+    ]
   }
-
 ]
