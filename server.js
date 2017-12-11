@@ -6,7 +6,7 @@ const dbcon = require("./dbConnection.js");
 const express = require('express');//using express
 
 
-
+console.log(dbcon.conString);
 const client = new pg.Client(dbcon.conString);
 
 const bodyParser = require('body-parser');
