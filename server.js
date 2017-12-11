@@ -1,10 +1,10 @@
 
 const pg = require('pg');
 const fs = require('fs');
+const dbcon = require("dbConnection.js");
 
-const conString = 'postgres://postgres:datadriver101@localhost:5432/meyou'; //constring to connect to
 
-const client = new pg.Client(conString); //create new client that will connect with postgres.
+const client = new pg.Client(dbcon.conString);
 
 client.connect(); //connecting method.
 
