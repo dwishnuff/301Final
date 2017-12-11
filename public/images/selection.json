@@ -1,0 +1,154 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M760.688 516.219l-49.812-49.656c-6.438-6.529-16.938-6.594-23.375 0l-105.001 104.937-120.125 120.375-93.031-93.125c-6.531-6.562-17.031-6.562-23.5 0l-49.719 49.688c-6.531 6.562-6.531 17.062 0 23.562l154.438 154.562c6.562 6.562 17.188 6.562 23.562 0l286.5-286.782c6.625-6.468 6.625-16.968 0.063-23.561zM228.469 580.812l49.687-49.812c42.469-42.375 116.344-42.438 158.781 0.062l25.312 25.312 113.751-108.374v-320h-576v704h320l-91.531-92.125c-43.781-43.937-43.781-115.25 0-159.063zM192 192h320v64h-320v-64zM192 320h320v64h-320v-64zM128 512h-64v-64h64v64zM128 384h-64v-64h64v64zM128 256h-64v-64h64v64zM192 448h64v64h-64v-64z"
+        ],
+        "width": 765,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "checklist"
+        ],
+        "defaultCode": 61558,
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "id": 22,
+        "order": 12,
+        "prevSize": 32,
+        "code": 61558,
+        "name": "checklist"
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 21
+    },
+    {
+      "icon": {
+        "paths": [
+          "M704 896h-640v-576h640v192h64v-320c0-35-29-64-64-64h-192c0-71-57-128-128-128s-128 57-128 128h-192c-35 0-64 29-64 64v704c0 35 29 64 64 64h640c35 0 64-29 64-64v-128h-64v128zM192 192c29 0 29 0 64 0s64-29 64-64 29-64 64-64 64 29 64 64 32 64 64 64 33 0 64 0 64 29 64 64h-512c0-39 28-64 64-64zM128 704h128v-64h-128v64zM576 576v-128l-256 192 256 192v-128h320v-128h-320zM128 832h192v-64h-192v64zM448 384h-320v64h320v-64zM256 512h-128v64h128v-64z"
+        ],
+        "width": 896,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "clippy"
+        ],
+        "defaultCode": 61493,
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "id": 29,
+        "order": 10,
+        "prevSize": 32,
+        "code": 61493,
+        "name": "clippy"
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 28
+    },
+    {
+      "icon": {
+        "paths": [
+          "M768 128c0-71-57-128-128-128s-128 57-128 128c0 47 26 89 64 111v106l-192 212-192-212v-106c38-22 64-63 64-111 0-71-57-128-128-128s-128 57-128 128c0 47 26 89 64 111v156l256 282v109c-38 22-64 63-64 111 0 71 57 128 128 128s128-57 128-128c0-47-26-89-64-111v-109l256-282v-156c38-22 64-63 64-111zM128 65c34 0 62 28 62 62s-28 62-62 62-62-28-62-62 28-62 62-62zM384 956c-34 0-62-28-62-62s28-62 62-62 62 28 62 62-28 62-62 62zM640 65c34 0 62 28 62 62s-28 62-62 62-62-28-62-62 28-62 62-62z"
+        ],
+        "width": 768,
+        "attrs": [],
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "tags": [
+          "repo-forked"
+        ],
+        "defaultCode": 61442,
+        "grid": 16
+      },
+      "attrs": [],
+      "properties": {
+        "id": 144,
+        "order": 13,
+        "prevSize": 32,
+        "code": 61442,
+        "name": "repo-forked"
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 143
+    },
+    {
+      "icon": {
+        "paths": [
+          "M992 384h-352v-352c0-17.672-14.328-32-32-32h-192c-17.672 0-32 14.328-32 32v352h-352c-17.672 0-32 14.328-32 32v192c0 17.672 14.328 32 32 32h352v352c0 17.672 14.328 32 32 32h192c17.672 0 32-14.328 32-32v-352h352c17.672 0 32-14.328 32-32v-192c0-17.672-14.328-32-32-32z"
+        ],
+        "tags": [
+          "plus",
+          "add",
+          "sum"
+        ],
+        "defaultCode": 59914,
+        "grid": 16,
+        "attrs": []
+      },
+      "attrs": [],
+      "properties": {
+        "ligatures": "plus, add",
+        "name": "plus",
+        "order": 14,
+        "id": 267,
+        "prevSize": 32
+      },
+      "setIdx": 1,
+      "setId": 1,
+      "iconIdx": 266
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon",
+        "majorVersion": 1,
+        "minorVersion": 0
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false,
+      "showSelector": true,
+      "selector": "",
+      "classSelector": ".icon",
+      "showMetrics": true,
+      "showMetadata": false,
+      "showVersion": true,
+      "autoHost": true
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16,
+    "quickUsageToken": {
+      "UntitledProject": "YmE5ZTQ0OWJmYmViMTc1YTViZDQzZGQ3NDU4ZGYxZjAjMSMxNTEyOTMzODg0IyMj"
+    }
+  }
+}
