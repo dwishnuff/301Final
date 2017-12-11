@@ -3,7 +3,6 @@ const pg = require('pg'); //using postgres
 const fs = require('fs'); //using fs module
 const express = require('express');//using express
 
-
 const conString = 'postgres://postgres:datadriver101@localhost:5432/meyou'; //constring to connect to
 
 const client = new pg.Client(conString); //create new client that will connect with postgres.
