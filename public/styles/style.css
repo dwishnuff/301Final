@@ -108,3 +108,28 @@ h2 {
   color: #e8a155;
   font-style: italic;
 }
+
+button, input[type=button], input[type=submit] {
+  width: 330px;
+  padding: 5px;
+  background: #555;
+  border-radius: 10px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+
+  overflow: visible;
+  position: relative;
+  float: right;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  /*height: 40px;
+  width: 110px;*/
+  font: normal 15px/40px 'Barlow Condensed', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  background: #d87913;
+
+  
+  text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+  }
+}
