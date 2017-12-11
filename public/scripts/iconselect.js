@@ -1,13 +1,12 @@
-var NounProject = require('the-noun-project'),
-nounProject = new NounProject({
-    key: '3e46b66b4dfd49129debc620f11902fe',
-    secret: '2023bb32e9774e10a91740bb0c115adb'
-});
+$('#searchForm').submit((event)=>{
+  event.preventDefault();
+  const userInput=$('input[name="search"]').val();
+  nounProject.getIconsByTerm(userInput, {limit: 10}, function (err, data) {
+      if (err) console.log(err);
+      $.each(data.icons, (icon)=>{
+        $('#photoSelector').append(`<img src="${icon.preview_url}">`);
+      });
+   });
+})
 
-
-//needs to be under event handler for selecting icons
-// nounProject.getIconsByTerm('goat', {limit: 5}, function (err, data) {
-//     if (!err) {
-//         console.log(data.icons);
-//     }
-// });
+//search icon, select icon, select operator, repeat.  Add link. Message.
