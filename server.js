@@ -2,7 +2,7 @@
 
 const pg = require('pg');
 const fs = require('fs');
-const dbcon = require("dbConnection.js");
+const dbcon = require("./dbConnection.js");
 const express = require('express');//using express
 
 
@@ -44,10 +44,21 @@ app.listen(PORT, function() {
 });
 
 //database loaders
-var NounProject = require('the-noun-project'),
+const NounProject = require('the-noun-project'),
 nounProject = new NounProject({
     key: '3e46b66b4dfd49129debc620f11902fe',
     secret: '2023bb32e9774e10a91740bb0c115adb'
+});
+
+app.post('/searchIcons', function(request, response){
+  console.log(request.body.searchTerm)
+  nounProject.getIconsByTerm(request.body.searchTerm, {limit: 10}, function (err, data) {
+      if (err) console.log(err);
+      response.send(data.icons);
+      console.log(data.icons)
+      // $.each(data.icons, (icon)=>{
+      //   $('#photoSelector').append(`<img src="${icon.preview_url}">`);
+      });
 });
 
 function loadGreeting() {
