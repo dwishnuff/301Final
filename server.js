@@ -2,7 +2,7 @@
 
 const pg = require('pg');
 const fs = require('fs');
-const dbcon = require("dbConnection.js");
+const dbcon = require("./dbConnection.js");
 const express = require('express');//using express
 
 
