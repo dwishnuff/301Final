@@ -2,6 +2,7 @@
 @import "searchbar.css"; /*to get searchbar styles*/
 @import "icons.css"; /*to get icons file*/
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Oswald'); /*import google font*/
+@import "button.css";
 
 body {
   font-family: 'Barlow Condensed', sans-serif;
@@ -81,6 +82,14 @@ footer {
   border-color: black;
   border-width: .25em;
   border-radius: 10%;
+}
+
+#photoSelector img:hover {
+  border-color: #d87913;
+}
+
+#photoSelector img:onclick {
+  border-color: purple;
 }
 
 #photoPreview img {
