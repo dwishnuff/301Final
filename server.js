@@ -56,8 +56,6 @@ app.post('/searchIcons', function(request, response){
       if (err) console.log(err);
       response.send(data.icons);
       console.log(data.icons)
-      // $.each(data.icons, (icon)=>{
-      //   $('#photoSelector').append(`<img src="${icon.preview_url}">`);
       });
 });
 
