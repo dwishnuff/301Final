@@ -16,17 +16,21 @@
 
 <body>
 
-<h1 class=banner> Me + You </h1>
+<h1 class="banner"> Me + You </h1>
 <h2> Preview your message </h2>
 <div> div container for preview </div>
 <h3> Change your display options </h3>
-<p>picture shape</p>
-<p>picture border color</p>
-<p>background color</p>
-<p>font color</p>
-<p>font </p>
 
 <br>
+<div class = "templates">
+<form = "pick-template">
+  <input type="radio" name="template_picker" value="template_1"> Template 1
+  <input type="radio" name="template_picker" value="template_2"> Template 2
+  <input type="radio" name="template_picker" value="template_3"> Template 3
+  <input type="radio" name="template_picker" value="template_4"> Template 4
+
+</form>
+</div>
 <form action="message.html">
     <input type="submit" class="buttonStyle" value="All set?">
 </form>
@@ -38,7 +42,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script> <!--moment.js script -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> <!--handlebars.js script -->
 <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script><!--page.js script -->
-
+<script src = "scripts/previewView.js"></script>
 </body>
 
 
