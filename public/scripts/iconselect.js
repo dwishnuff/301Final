@@ -9,11 +9,7 @@ $('#searchForm').submit((event)=>{
       });
    })
 
-  // nounProject.getIconsByTerm(userInput, {limit: 10}, function (err, data) {
-  //     if (err) console.log(err);
-  //     $.each(data.icons, (icon)=>{
-  //       $('#photoSelector').append(`<img src="${icon.preview_url}">`);
-  //     });
+
    });
 
 
