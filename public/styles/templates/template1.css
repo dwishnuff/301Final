@@ -3,6 +3,19 @@
 @import "icons.css"; /*to get icons file*/
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Oswald'); /*import google font*/
 
+input[type=radio]:checked ~ .check {
+  border: 5px solid #0DFF92;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #0DFF92;
+}
+
+input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+
+
 body {
   font-family: 'Barlow Condensed', sans-serif;
 }
