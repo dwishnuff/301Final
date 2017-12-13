@@ -2,7 +2,19 @@
 @import "searchbar.css"; /*to get searchbar styles*/
 @import "icons.css"; /*to get icons file*/
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Oswald'); /*import google font*/
-@import "button.css";
+
+input[type=radio]:checked ~ .check {
+  border: 5px solid #0DFF92;
+}
+
+input[type=radio]:checked ~ .check::before{
+  background: #0DFF92;
+}
+
+input[type=radio]:checked ~ label{
+  color: #0DFF92;
+}
+
 
 body {
   font-family: 'Barlow Condensed', sans-serif;
@@ -39,7 +51,7 @@ footer {
 }
 
 #photoPreview {
-  background: #133468;
+  background: #d87913;;
   vertical-align: middle;
   height: 16em;
   width: 100%;
@@ -55,7 +67,7 @@ footer {
   overflow: hidden;
   display: inline-block;
   border-radius: 50%;
-  border: 3px solid #d87913;
+  border: 3px solid #133468;
   /*position: absolute;
   top: 0;
   bottom: 0;
@@ -70,7 +82,7 @@ footer {
   margin: auto;*/
   vertical-align: middle;
   font-size: 8em;
-  color: white;
+  color: black;
 
 }
 
@@ -82,14 +94,6 @@ footer {
   border-color: black;
   border-width: .25em;
   border-radius: 10%;
-}
-
-#photoSelector img:hover {
-  border-color: #d87913;
-}
-
-#photoSelector img:onclick {
-  border-color: purple;
 }
 
 #photoPreview img {
@@ -108,7 +112,7 @@ h1 {
   font-family: 'Oswald', sans-serif;
   font-size: 100px;
   font-weight: bold;
-  color: #d87913;
+  color: #133468;
   text-decoration: none;
 }
 
