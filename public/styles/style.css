@@ -163,12 +163,14 @@ ul li {
 .operatorSelect {
   display: table;   /* Allow the centering to work */
   margin: 0 auto;
+  font-size: 8em;
 }
 
 ul#horizontal-list {
 	min-width: 696px;
 	list-style: none;
 	padding-top: 20px;
+  margin:0;
 	}
 	ul#horizontal-list li {
 		display: inline;
