@@ -88,7 +88,7 @@ footer {
   border-color: #d87913;
 }
 
-.onClick {
+#photoSelector .onClick {
   border-color: grey;
 }
 
@@ -133,7 +133,7 @@ h2 {
 .buttonStyle  {
   width: 330px;
   padding: 5px;
-  background: #555;
+  /*background: #555;*/
   border-radius: 10px;
   box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
 
@@ -153,3 +153,23 @@ h2 {
   text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
   }
 }
+
+ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.operatorSelect {
+  display: table;   /* Allow the centering to work */
+  margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
