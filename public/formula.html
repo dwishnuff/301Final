@@ -13,95 +13,87 @@
 <body>
   <h1 class="banner"> Me + You </h1>
   <h2> Let's get started </h2>
-  <h3>Choose an image and an operator (you can add up to 5).<h3>
+  <h3>Choose an image and an operator, then select "add to message". You can add up to 5 pairs.<h3>
+    <h2>1. Select one icon.</h2>
     <div id="apiButtons" class="button_box2">
       <form class="form-wrapper-2 cf" id="searchForm">
         <input type="text" name="search" placeholder="Search icons.." required>
         <button type="submit">Search</button>
-
-        </form>
-      </div>
-      <div id="photoSelector">
-        <p>Select one icon.</p>
       </form>
-
     </div>
     <div id="photoSelector">
-
     </div>
+    <h2>2. Select one operator.</h2>
     <div class="operatorSelect">
-      <h2>Select your Operator</h2>
-      <!-- <div class="dropdown-content"> -->
-        <ul id="horizontal-list">
-          <li>+</li>
-          <li>-</li>
-          <li>x</li>
-          <li>÷</li>
-          <li>=</li>
-        </ul>
-
-      </div>
-      <input type="submit" class="buttonStyle" id="iconAdd"  value="Add to message">
+      <ul id="horizontal-list">
+        <li id="plus">+</li>
+        <li id="minus">-</li>
+        <li id="multiply">x</li>
+        <li id="divide">÷</li>
+        <li id="equals">=</li>
+      </ul>
     </div>
-    <p>preview</p>
-    <div id="photoPreview">
-      <div class="photoSize">
-        <img src="images/Corey.jpg">
-      </div>
-      <span class="operator">+</span>
-      <div class="photoSize">
-        <img src="images/Dani-Jamie2.jpg">
-      </div>
-      <span class="operator">=</span>
-      <div class="photoSize">
-        <img src="images/AllOfUs.jpg">
-      </div>
-      <span class="operator">-</span>
-      <div class="photoSize">
-        <img src="images/JamieSad.jpg">
-      </div>
-      <span class="operator">=</span>
-      <div class="photoSize">
-        <img src="images/Hotel.jpg">
-      </div>
-
+    <input type="submit" class="buttonStyle" id="iconAdd"  value="Add to message">
+  </div>
+  <p>preview</p>
+  <div id="photoPreview">
+    <div class="photoSize">
+      <img src="images/Corey.jpg">
+    </div>
+    <span class="operator">+</span>
+    <div class="photoSize">
+      <img src="images/Dani-Jamie2.jpg">
+    </div>
+    <span class="operator">=</span>
+    <div class="photoSize">
+      <img src="images/AllOfUs.jpg">
+    </div>
+    <span class="operator">-</span>
+    <div class="photoSize">
+      <img src="images/JamieSad.jpg">
+    </div>
+    <span class="operator">=</span>
+    <div class="photoSize">
+      <img src="images/Hotel.jpg">
     </div>
 
-    <div id="linkPage">
+  </div>
 
-      <form>
-        If you'd like to add a link to your message, enter it here:<br>
-        <textarea name="linkArea" rows="1" cols="75">
-        </textarea><br>
-      </form>
-    </div>
-    <div id="messageForm">
-      <p>If you'd like to add a personal note to your message, enter it here:</p>
-      <textarea name="message" rows="15" cols="150">
-      </textarea>
-      <br>
-      <form id ="create">
-        <input type = "button" class="buttonStyle" value="Make it pretty" onclick="window.location.href = 'preview.html'">
-      </form>
-    </div>
+  <div id="linkPage">
+
+    <form>
+      If you'd like to add a link to your message, enter it here:<br>
+      <textarea name="linkArea" rows="1" cols="75">
+      </textarea><br>
+    </form>
+  </div>
+  <div id="messageForm">
+    <p>If you'd like to add a personal note to your message, enter it here:</p>
+    <textarea name="message" rows="15" cols="150">
+    </textarea>
+    <br>
+    <form id ="create">
+      <input type = "button" class="buttonStyle" value="Make it pretty" onclick="window.location.href = 'preview.html'">
+    </form>
+  </div>
 
 
 
-    <!-- 1. We need your photos!
-    2. Select Photos/Icons/Operators(+,-,*,/,=) <--Drop down menu
-    3. Preview after they are selected
-    4. Final photo selection
-    5. Link to page
-    6. Preview button -->
-    <footer> &copy; 2017  | me + you | share your message </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script> <!-- clipboard.js script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--jquery.js script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script> <!--moment.js script -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> <!--handlebars.js script -->
-    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script><!--page.js script -->
-    <script src="scripts/iconselect.js"></script>
-    <script src="scripts/script.js"></script>
-    <script type="text/javascript"> addResize() </script>
-  </body>
+  <!-- 1. We need your photos!
+  2. Select Photos/Icons/Operators(+,-,*,/,=) <--Drop down menu
+  3. Preview after they are selected
+  4. Final photo selection
+  5. Link to page
+  6. Preview button -->
+  <footer> &copy; 2017  | me + you | share your message </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script> <!-- clipboard.js script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--jquery.js script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script> <!--moment.js script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> <!--handlebars.js script -->
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script><!--page.js script -->
+  <script src="scripts/iconselect.js"></script>
+  <script src="scripts/script.js"></script>
+  <script type="text/javascript"> addResize() </script>
+</body>
 
-  </html>
+</html>

@@ -15,21 +15,21 @@ var message = [];
 
 var iconClicked
 var operatorClicked
-//constructor function
+
 
 
 //onClick event to highlight clicked icon
 function recordIconClick(event) {
   iconClicked = event.target.getAttribute("src");
   event.target.classList.add("onClick");
-  // message.push(iconClicked)
+
 }
 
 //Select Operator
 function recordOperatorClick(event) {
-  operatorClicked = event.target.operator;
+  operatorClicked = event.target.getAttribute("id"); //How do we identify what this is being applied to?
   event.target.classList.add("onClick");
-  // message.push(operatorClicked)
+
 };
 //Add to Message
 
