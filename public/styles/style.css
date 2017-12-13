@@ -88,9 +88,10 @@ footer {
   border-color: #d87913;
 }
 
-#photoSelector img:onclick {
-  border-color: purple;
+.onClick {
+  border-color: grey;
 }
+
 
 #photoPreview img {
 
