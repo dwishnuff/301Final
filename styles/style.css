@@ -40,6 +40,11 @@
   box-sizing: border-box;
 }
 
+.prettyPreview {
+  background: black;
+
+}
+
 .photoSize {
   height: 12.8em;
   width: 12.8em;

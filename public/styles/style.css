@@ -48,6 +48,13 @@ footer {
   padding-top: 1.4em;
   box-sizing: border-box;
 }
+.prettyPreview {
+  background: black;
+}
+iframe {
+  width: 100%;
+  height: 1000px;
+}
 
 .photoSize {
   height: 12.8em;
