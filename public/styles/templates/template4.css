@@ -47,6 +47,10 @@ footer {
   padding-top: 1.4em;
   box-sizing: border-box;
 }
+iframe {
+  width: 100%;
+  height: 400px;
+}
 
 .photoSize {
   height: 12.8em;
