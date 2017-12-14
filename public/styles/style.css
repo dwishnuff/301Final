@@ -97,8 +97,12 @@ iframe {
 
 #photoSelector .onClick {
   border-color: grey;
+  color: grey;
 }
 
+.onClick {
+  color: grey;
+}
 
 #photoPreview img {
 
@@ -181,4 +185,8 @@ ul#horizontal-list {
 	}
 	ul#horizontal-list li {
 		display: inline;
+	}
+
+  ul#horizontal-list li:hover {
+		color: grey;
 	}

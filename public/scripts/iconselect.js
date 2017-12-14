@@ -10,6 +10,7 @@ $('#searchForm').submit((event)=>{
   });
 });
 
+
 //var to hold SelectedOptions
 var message = [];
 
@@ -27,7 +28,7 @@ function recordIconClick(event) {
 
 //Select Operator
 function recordOperatorClick(event) {
-  operatorClicked = event.target.getAttribute("id"); //How do we identify what this is being applied to?
+  operatorClicked = event.target.innerText; //How do we identify what this is being applied to?
   event.target.classList.add("onClick");
 
 };
