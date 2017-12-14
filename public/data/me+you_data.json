@@ -2,6 +2,8 @@
   {
     "email":"me+you@gmail.com",
     "greeting_message": "This is your greeting message",
+    "template_css": "",
+    "url":"my url",
     "messages":[
       {
         "position": 1,
@@ -30,6 +32,8 @@
   {
     "email":"jeff+Christy@gmail.com",
     "greeting_message": "This is your greeting message #2",
+    "template_css": "",
+    "url": "my url",
     "messages":[
       {
         "position": 1,
