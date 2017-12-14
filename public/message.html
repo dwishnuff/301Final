@@ -10,7 +10,18 @@
   <link rel="icon"
         type="image/png"
         href="images/png/plus.png">
+
   <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+  //handlebars template
+  <script id="message-template" type="text/x-handlebars-template">
+    <div class="photoSize">
+      <img src={{iconURL}}>
+    </div>
+    <span class="operator">{{operator}}</span>
+    <div class="greeting">{{greeting}}</div>
+    <div class="enteredURL">{{enteredURL}}</div>
+  </script>
 
 </head>
 
