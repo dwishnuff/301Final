@@ -38,7 +38,7 @@ footer {
 }
 
 #photoPreview {
-  background: red;
+  background: linear-gradient(to right, blue, purple);
   vertical-align: middle;
   height: 16em;
   width: 100%;
@@ -58,7 +58,7 @@ iframe {
   overflow: hidden;
   display: inline-block;
   border-radius: 50%;
-  border: 3px solid #d87913;
+  border: 3px solid black;
   /*position: absolute;
   top: 0;
   bottom: 0;
