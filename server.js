@@ -26,6 +26,8 @@ app.use(express.static('./public'));
 //   response.sendFile('',{root: './public'});
 // });
 
+
+
 app.get('/meyou', function (request, response) {
 
   client.query('SELECT * FROM greeting INNER JOIN message ON greeting_id = ')
@@ -49,6 +51,8 @@ nounProject = new NounProject({
     key: '3e46b66b4dfd49129debc620f11902fe',
     secret: '2023bb32e9774e10a91740bb0c115adb'
 });
+
+app.post('')
 
 app.post('/searchIcons', function(request, response){
   console.log(request.body.searchTerm)
