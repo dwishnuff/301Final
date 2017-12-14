@@ -57,8 +57,8 @@ iframe {
   width: 12.8em;
   overflow: hidden;
   display: inline-block;
-  border-radius: 50%;
-  border: 3px solid #d87913;
+  /*border-radius: 50%;*/
+  border: 3px solid white;
   /*position: absolute;
   top: 0;
   bottom: 0;

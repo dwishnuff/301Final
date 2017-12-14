@@ -86,9 +86,9 @@ function loadGreeting() {
 
   function loadMessage(greeting_id, message) {
     client.query(`
-      INSERT INTO message (greeting_id, img_source, operator, position)
+      INSERT INTO message (greeting_id, img_source, operator, position, template_css)
       VALUES ($1, $2, $3, $4)`,
-      [greeting_id, message.img_source, message.operator, message.position]);
+      [greeting_id, message.img_source, message.operator, message.position, message.template_css]);
     }
 
 
@@ -111,6 +111,7 @@ function loadGreeting() {
             img_source VARCHAR(255) NOT NULL,
             operator VARCHAR(255),
             position INTEGER NOT NULL);
+            template_css
             `) //creating table with properties and values.
             // .then(() => loadPreview())
             .catch(err => console.log(err)); //will catch an error and return it.
