@@ -43,16 +43,38 @@ function addToMessage(event) {
   //reset #searchForm to initial values
   $("#photoSelector").empty();
   $("#horizontal-list .onClick").removeClass("onClick")
+  $("#photoPreview").empty();
+  operatorClicked="";
+  iconClicked="";
+  addtoPage ();
 };
 
 $("#iconAdd").click(addToMessage);
 
 
 //compile handlebars template
-message.prototype.toHtml = function() {
-  //handlebars template:
-  const templateFiller = Handlebars.compile($('#message-template').html());
+// message.prototype.toHtml = function() {
+//   //handlebars template:
+//   const templateFiller = Handlebars.compile($('#message-template').html());
+//
+//   return templateFiller(this);
+//
+// };
 
-  return templateFiller(this);
+// Retrieve the template data from the HTML (jQuery is used here).
 
-}
+function addtoPage () {
+var template = $('#message-template').html();
+
+// Compile the template data into a function
+var templateScript = Handlebars.compile(template);
+
+
+console.log(message);
+// html = 'My name is Ritesh Kumar. I am a developer.'
+var content=message.reduce((html,pairs)=> html+templateScript(pairs),"");
+console.log(content);
+// Insert the HTML code into the page}
+$("#photoPreview").append(content);
+console.log($("#photoPreview").html());
+};
