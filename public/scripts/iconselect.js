@@ -40,9 +40,19 @@ function addToMessage(event) {
     operator: operatorClicked
   };
   message.push(newPair)
+  //reset #searchForm to initial values
+  $("#photoSelector").empty();
+  $("#horizontal-list .onClick").removeClass("onClick")
 };
 
 $("#iconAdd").click(addToMessage);
 
 
-//search icon, select icon, select operator, repeat.  Add link. Message.
+//compile handlebars template
+message.prototype.toHtml = function() {
+  //handlebars template:
+  const templateFiller = Handlebars.compile($('#message-template').html());
+
+  return templateFiller(this);
+
+}
