@@ -43,7 +43,10 @@ function addToMessage(event) {
     iconURL: iconClicked,
     operator: operatorClicked
   };
-  message.push(newPair)
+  if (message.length>4) {
+    alert("The maximum times you can add to message is 5.  Please select either 'reset' or 'make it pretty'.")
+    } else {
+    message.push(newPair)
   //reset #searchForm to initial values
   $("#photoSelector").empty();
   $("#horizontal-list .onClick").removeClass("onClick")
@@ -51,6 +54,8 @@ function addToMessage(event) {
   operatorClicked="";
   iconClicked="";
   addtoPage ();
+
+  };
 };
 
 $("#iconAdd").click(addToMessage);
