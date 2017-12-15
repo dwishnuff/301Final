@@ -8,17 +8,20 @@
   <meta name="description" content="Me + You PREVIEW">
   <meta name="author" content="Danielle W. Beyer, Heather Knight, Jeffrey Lonergan">
   <link rel="icon"
-        type="image/png"
-        href="images/png/plus.png">
+  type="image/png"
+  href="images/png/plus.png">
 
   <link rel="stylesheet" type="text/css" href="styles/style.css">
 
   //handlebars template
-  <script id="message-template" type="text/x-handlebars-template">
+  <script id="display-template" type="text/x-handlebars-template">
     <div class="photoSize">
-      <img src={{iconURL}}>
+      <img src={{img_source}}>
     </div>
     <span class="operator">{{operator}}</span>
+  </script>
+
+  <script id="greeting-template" type="text/x-handlebars-template">
     <div class="greeting">{{greeting}}</div>
     <div class="enteredURL">{{enteredURL}}</div>
   </script>
@@ -27,54 +30,37 @@
 
 <body>
 
-<h1 class=banner> Me + You</h1>
+  <h1 class=banner> Me + You</h1>
 
-<div class = "finalPreview">
-<div id="photoPreview">
-  <div class="photoSize">
-    <img src="images/Corey.jpg">
-  </div>
-  <span class="operator">+</span>
-  <div class="photoSize">
-    <img src="images/Dani-Jamie2.jpg">
-  </div>
-  <span class="operator">=</span>
-  <div class="photoSize">
-    <img src="images/AllOfUs.jpg">
-  </div>
-  <span class="operator">-</span>
-  <div class="photoSize">
-    <img src="images/JamieSad.jpg">
-  </div>
-  <span class="operator">=</span>
-  <div class="photoSize">
-    <img src="images/Hotel.jpg">
-  </div>
+  <div class = "finalPreview">
+    <div id="messageDisplay">
 
-</div>
-</div>
-<div id=messageDisplay> container for message display </div>
 
-<div id=shareURL class="button_box2">
+    </div>
+  </div>
+  <div id greetingDisplay>  </div>
+
+  <div id=shareURL class="button_box2">
     <form class="form-wrapper-2 cf">
-    <input id=displayURL type="text" name="search"  required>
-    <button id="copyButton" class="icon-clippy"><alt="Copy to Clipboard"</button>
+      <input id=displayURL type="text" name="search"  required>
+      <button id="copyButton" class="icon-clippy"><alt="Copy to Clipboard"</button>
     </form>
- </div>
-<br>
-<form action="index.html" >
+  </div>
+  <br>
+  <form action="index.html" >
     <input class="buttonStyle" type="submit" value="Cool! I want to make my own message.">
-</form>
+  </form>
 
-<footer> &copy; 2017  | me + you | share your message </footer>
+  <footer> &copy; 2017  | me + you | share your message </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script> <!-- clipboard.js script -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--jquery.js script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script> <!--moment.js script -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> <!--handlebars.js script -->
-<script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script><!--page.js script -->
-<script src="scripts/script.js"></script>
-<script type='text/javascript'> copyURL()</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script> <!-- clipboard.js script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!--jquery.js script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.2/moment.min.js"></script> <!--moment.js script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script> <!--handlebars.js script -->
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script><!--page.js script -->
+  <script src="scripts/script.js"></script>
+  <script src="scripts/message.js"></script>
+  <script type='text/javascript'> copyURL();messageLoad()</script>
 </body>
 
 

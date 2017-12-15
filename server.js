@@ -51,7 +51,7 @@ app.post('/meyou', function(request, response) {
         VALUES ($1,$2,$3,$4)`,
         [result.rows[0].greeting_id,item.iconURL,item.operator,index+1]
       ).then (function(){
-        response.send('insert complete');
+        response.send({"greeting_id":result.rows[0].greeting_id});
       }).catch (function(error){
         console.log(error)
       })
@@ -79,6 +79,33 @@ app.post('/searchIcons', function(request, response){
       response.send(data.icons);
       console.log(data.icons)
       });
+});
+
+app.get('/meyou/:id', function(request, response) {
+  // COMMENT: What number(s) of the full-stack-diagram.png image correspond to the following line of code? Which method of article.js is interacting with this particular piece of `server.js`? What part of CRUD is being enacted/managed by this particular piece of code?
+  // #3; Article.prototype.updateRecord(); Update;
+  client.query(
+    `SELECT * FROM greeting WHERE greeting_id=$1;`,
+    [
+          request.params.id
+    ]
+  )
+  .then(function(greetingResults) {
+
+    client.query(
+      `SELECT * FROM message WHERE greeting_id=$1;`,
+      [
+            request.params.id
+      ]
+    ).then(function(messageResults){
+      let greeting=greetingResults.rows[0];
+      greeting.messages=messageResults.rows;
+      response.send(greeting);
+    })
+  })
+  .catch(function(err) {
+    console.error(err);
+  });
 });
 
 
