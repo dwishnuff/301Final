@@ -64,6 +64,7 @@ function resetIcons(event) {
   $("#photoPreview").empty();
   operatorClicked="";
   iconClicked="";
+  message=[];
 
 };
 
