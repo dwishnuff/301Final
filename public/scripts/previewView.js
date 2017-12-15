@@ -5,15 +5,25 @@ $('input[type=radio]').change(function(e) {
   $('#prettyPreview').contents().find('link[rel="stylesheet"]').attr("href",`styles/templates/${e.target.value}.css`);
 
 })
+
+//lab 8 server.js $.put(/articles) example follow that 
 //use JQuery.post([settings])
 //save the result to the database on preview.html.
-$.post(url, [data], [callback],[type] )
+$.post('/meyou', function(request, response){
+  console.log()
+
+});
 
 
 //use JQuery.get([settings])
 //load the result that was saved in message.html.
 
 $.get('/meyou', function(request, response){
-client.query('SELECT template_css FROM meyou')
-
-}, [success], [dataType])
+  client.query('SELECT template_css FROM greeting')
+  .then(function(result) {
+    response.send(result.rows);
+  })
+  .catch(function(err) {
+    console.error(err)
+  })
+},)
