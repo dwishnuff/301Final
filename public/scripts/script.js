@@ -30,8 +30,3 @@ function copyURL() {
 
 document.getElementById("displayURL").value=url;
 };
-
-//load onClick event to operators on page load
-$(document).ready(function(){
-  $("#horizontal-list").on("click","li",recordOperatorClick);
-})
