@@ -51,17 +51,23 @@ function addToMessage(event) {
 
 $("#iconAdd").click(addToMessage);
 
+//Reset button
+function resetIcons(event) {
 
-//compile handlebars template
-// message.prototype.toHtml = function() {
-//   //handlebars template:
-//   const templateFiller = Handlebars.compile($('#message-template').html());
-//
-//   return templateFiller(this);
-//
-// };
+  //reset #icons to initial values
+  $("#photoSelector").empty();
+  $("#horizontal-list .onClick").removeClass("onClick")
+  $("#photoPreview").empty();
+  operatorClicked="";
+  iconClicked="";
 
-// Retrieve the template data from the HTML (jQuery is used here).
+};
+
+
+$("#iconReset").click(resetIcons);
+
+
+//handlebars template
 
 function addtoPage () {
 var template = $('#message-template').html();
@@ -71,10 +77,27 @@ var templateScript = Handlebars.compile(template);
 
 
 console.log(message);
-// html = 'My name is Ritesh Kumar. I am a developer.'
+// 
 var content=message.reduce((html,pairs)=> html+templateScript(pairs),"");
 console.log(content);
 // Insert the HTML code into the page}
 $("#photoPreview").append(content);
 console.log($("#photoPreview").html());
 };
+
+//make it pretty button onClick functions
+function saveMessage () {
+  const url = $("textarea[name=linkPage]").val();
+  const note = $("textarea[name=messageForm]").val();
+
+  $.post('/meyou', {
+    url:url,
+    greeting_message:note,
+    messages:message,
+  }).then (function() {
+    window.location.href = 'preview.html';
+  });
+}
+
+
+$("#makeItPretty").click(saveMessage);

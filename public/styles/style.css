@@ -163,7 +163,30 @@ h2 {
 
   text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
   }
-}
+
+  .buttonGrey  {
+    width: 330px;
+    padding: 5px;
+    /*background: #555;*/
+    border-radius: 10px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.4) inset, 0 1px 0 rgba(255,255,255,.2);
+
+    overflow: visible;
+    /*position: relative;*/
+    border: 0;
+    padding: 0;
+    font: normal 15px/40px 'Barlow Condensed', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    background: grey;
+    position: relative;
+      left: 100%;
+      transform: translateX(-100%);
+
+
+    text-shadow: 0 -1px 0 rgba(0, 0 ,0, .3);
+    }
+
 
 ul li {
   list-style-type: none;
