@@ -14,6 +14,11 @@ $.post(url, [data], [callback],[type] )
 //load the result that was saved in message.html.
 
 $.get('/meyou', function(request, response){
-client.query('SELECT template_css FROM meyou')
-
-}, [success], [dataType])
+  client.query('SELECT template_css FROM greeting')
+  .then(function(result) {
+    response.send(result.rows);
+  })
+  .catch(function(err) {
+    console.error(err)
+  })
+},)
