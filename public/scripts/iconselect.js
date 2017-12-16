@@ -10,6 +10,10 @@ $('#searchForm').submit((event)=>{
   });
 });
 
+//load onClick event to operators on page load
+$(document).ready(function(){
+  $("#horizontal-list").on("click","li",recordOperatorClick);
+})
 
 //var to hold SelectedOptions
 var message = [];
@@ -39,7 +43,10 @@ function addToMessage(event) {
     iconURL: iconClicked,
     operator: operatorClicked
   };
-  message.push(newPair)
+  if (message.length>4) {
+    alert("The maximum times you can add to message is 5.  Please select either 'reset' or 'make it pretty'.")
+    } else {
+    message.push(newPair)
   //reset #searchForm to initial values
   $("#photoSelector").empty();
   $("#horizontal-list .onClick").removeClass("onClick")
@@ -47,6 +54,8 @@ function addToMessage(event) {
   operatorClicked="";
   iconClicked="";
   addtoPage ();
+
+  };
 };
 
 $("#iconAdd").click(addToMessage);
@@ -60,6 +69,7 @@ function resetIcons(event) {
   $("#photoPreview").empty();
   operatorClicked="";
   iconClicked="";
+  message=[];
 
 };
 
@@ -74,10 +84,8 @@ var template = $('#message-template').html();
 
 // Compile the template data into a function
 var templateScript = Handlebars.compile(template);
-
-
 console.log(message);
-// 
+//
 var content=message.reduce((html,pairs)=> html+templateScript(pairs),"");
 console.log(content);
 // Insert the HTML code into the page}
@@ -94,7 +102,9 @@ function saveMessage () {
     url:url,
     greeting_message:note,
     messages:message,
-  }).then (function() {
+  }).then (function(result) {
+    console.log(result);
+    localStorage.setItem ('greeting_id',result.greeting_id);
     window.location.href = 'preview.html';
   });
 }

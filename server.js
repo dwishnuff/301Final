@@ -29,7 +29,7 @@ app.use(express.static('./public'));
 app.put('/meyou/:id', function(request, response) {
 
   client.query(
-  `INSERT 
+  `INSERT
   SET
     title=$1, author=$2, "authorUrl"=$3, category=$4, "publishedOn"=$5, body=$6
   WHERE article_id=$7;
