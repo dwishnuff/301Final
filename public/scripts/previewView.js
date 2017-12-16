@@ -6,7 +6,7 @@ $('input[type=radio]').change(function(e) {
 
 })
 
-//lab 8 server.js $.put(/articles) example follow that 
+//lab 8 server.js $.put(/articles) example follow that, you'll want to update your table with the templace_css.
 //use JQuery.post([settings])
 //save the result to the database on preview.html.
 $.post('/meyou', function(request, response){

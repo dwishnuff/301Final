@@ -26,11 +26,36 @@ app.use(express.static('./public'));
 //   response.sendFile('',{root: './public'});
 // });
 
+app.put('/meyou/:id', function(request, response) {
 
+  client.query(
+  `INSERT 
+  SET
+    title=$1, author=$2, "authorUrl"=$3, category=$4, "publishedOn"=$5, body=$6
+  WHERE article_id=$7;
+  `,
+  [
+    request.body.title,
+    request.body.author,
+    request.body.authorUrl,
+    request.body.category,
+    request.body.publishedOn,
+    request.body.body,
+    request.params.id
+  ]
+)
+.then(function() {
+  response.send('update complete')
+})
+.catch(function(err) {
+  console.error(err);
+});
+});
+})
 
 app.get('/meyou', function (request, response) {
 
-  client.query('SELECT * FROM greeting INNER JOIN message ON message.greeting_id = greeting.greeting_id')
+  client.query('SELECT * FROM greeting INNER JOIN message ON greeting_id = ')
   .then(function(result){
     response.send(result.rows);
   })
@@ -39,25 +64,7 @@ app.get('/meyou', function (request, response) {
   });
 });
 
-app.post('/meyou', function(request, response) {
-  client.query(
-    `INSERT INTO greeting (url,greeting_message)
-    VALUES ($1,$2) RETURNING greeting_id`,
-    [request.body.url,request.body.greeting_message]
-  ).then (function(result) {
-    request.body.messages.forEach(function(item,index){
-      client.query(
-        `INSERT INTO message (greeting_id,img_source,operator,position)
-        VALUES ($1,$2,$3,$4)`,
-        [result.rows[0].greeting_id,item.iconURL,item.operator,index+1]
-      ).then (function(){
-        response.send('insert complete');
-      }).catch (function(error){
-        console.log(error)
-      })
-    })
-  })
-})
+// app.post('/meyou', function(request, response) {})
 
 app.listen(PORT, function() {
   console.log(`Server started on port ${PORT}!`);
@@ -70,7 +77,7 @@ nounProject = new NounProject({
     secret: '2023bb32e9774e10a91740bb0c115adb'
 });
 
-// app.post('')
+app.post('/meyou')
 
 app.post('/searchIcons', function(request, response){
   console.log(request.body.searchTerm)
@@ -80,7 +87,6 @@ app.post('/searchIcons', function(request, response){
       console.log(data.icons)
       });
 });
-
 
 function loadGreeting() {
   fs.readFile('./public/data/me+you_data.json',(err, fd) => {
