@@ -226,8 +226,8 @@ ul#horizontal-list {
     color: #133468;
   }
 
-#copyURLDirections {
+#copyURLDirections #noFinalOperator{
   font-size: 1.2em;
   color: grey;
-  font-style: italic;
+  font-style:italic;
 }
