@@ -105,7 +105,7 @@ function saveMessage () {
   }).then (function(result) {
     console.log(result);
     localStorage.setItem ('greeting_id',result.greeting_id);
-    window.location.href = 'preview.html';
+    window.location.href = `preview.html?id=${result.greeting_id}`;
   });
 }
 

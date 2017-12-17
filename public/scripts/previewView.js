@@ -1,5 +1,8 @@
 //JQUERY change for radio buttons on preview.HTML
 //think about using iframe html in order to change one aspect of your code.
+var greetingID=localStorage.getItem("greeting_id");
+$('#goToMessage').attr('href', `/message.html?id=${greetingID}`);
+
 $('input[type=radio]').change(function(e) {
   console.log(e.target.value);
   $('#prettyPreview').contents().find('link[rel="stylesheet"]').attr("href",`styles/templates/${e.target.value}.css`);
