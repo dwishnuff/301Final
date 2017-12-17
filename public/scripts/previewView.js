@@ -12,9 +12,10 @@ $.post('/meyou', function(request, response){
   console.log()
 
   client.query(
-    `UPDATE greeting(templace_css)
-    VALUES($1)`
-    [
+    `UPDATE greeting
+    SET
+    templace_css=$1`
+    [..
       request.body.templace_css
     ]
   ).then(function(){
