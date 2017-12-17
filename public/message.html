@@ -22,8 +22,8 @@
   </script>
 
   <script id="greeting-template" type="text/x-handlebars-template">
-    <div class="greeting">{{greeting_message}}</div>
-    <div class="enteredURL"> <a href={{url}}>{{url}}</a></div>
+    <div class="greeting" id="greetingCSS">{{greeting_message}}</div>
+    <div class="enteredURL" id="urlCSS"> <a href={{url}}>{{url}}</a></div>
   </script>
 
 </head>
@@ -45,6 +45,7 @@
   <div id=greetingDisplay>  </div>
 
   <div id=shareURL class="button_box2">
+    <span id=copyURLDirections>Use the button below to copy the message URL. Share your message by pasting URL into your personal email or messaging system.</span>
     <form class="form-wrapper-2 cf">
       <input id=displayURL type="text" name="search"  required>
       <button id="copyButton" class="icon-clippy"><alt="Copy to Clipboard"</button>

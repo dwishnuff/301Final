@@ -215,3 +215,19 @@ ul#horizontal-list {
   ul#horizontal-list li:hover {
 		color: grey;
 	}
+
+  #greetingCSS {
+    font-size: 2em;
+    color: #133468;
+  }
+
+  #urlCSS {
+    font-size: 1.75em;
+    color: #133468;
+  }
+
+#copyURLDirections #noFinalOperator{
+  font-size: 1.2em;
+  color: grey;
+  font-style:italic;
+}
