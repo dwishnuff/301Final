@@ -11,34 +11,35 @@ $('input[type=radio]').change(function(e) {
 //lab 8 server.js $.put(/articles) example follow that, you'll want to update your table with the templace_css.
 //use JQuery.post([settings])
 //save the result to the database on preview.html.
-$.post('/meyou', function(request, response){
-  console.log()
+$('#pick-template').submit(function(e) {
+  e.preventDefault();
+  var data = {
+    greeting_id:greetingID,
+    template_css:  $('#prettyPreview').contents().find('link[rel="stylesheet"]').attr("href")
+  }
+  console.log(data)
+  $.ajax({
+    url:'/meyou',
+    method:'PUT',
+    data:data
+  }).done(function(response){
+    if(response === 'update complete')
+    {
+      console.log("template saved");
 
-  client.query(
-    `UPDATE greeting
-    SET
-    templace_css=$1`
-    [
-      request.body.templace_css
-    ]
-  ).then(function(){
-    response.send('update complete')
+    }
   })
-  .catch(function(err){
-    console.error(err);
-  });
 });
-
 
 //use JQuery.get([settings])
 //load the result that was saved in message.html.
 
-$.get('/meyou', function(request, response){
-  client.query('SELECT template_css FROM greeting')
-  .then(function(result) {
-    response.send(result.rows);
-  })
-  .catch(function(err) {
-    console.error(err)
-  })
-},)
+// $.get('/meyou', function(request, response){
+//   client.query('SELECT template_css FROM greeting')
+//   .then(function(result) {
+//     response.send(result.rows);
+//   })
+//   .catch(function(err) {
+//     console.error(err)
+//   })
+// },)
