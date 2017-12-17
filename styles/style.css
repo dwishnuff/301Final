@@ -101,12 +101,12 @@ h2 {
   font-style: italic;
 }
 
-.greeting #greetingDisplay {
+#greetingCSS {
   font-size: 2em;
   color: #133468;
 }
 
-.enteredURL #greetingDisplay {
+#urlCSS {
   font-size: 1em;
   color: #133468;
 }
