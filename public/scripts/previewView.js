@@ -5,9 +5,13 @@ $('input[type=radio]').change(function(e) {
   $('#prettyPreview').contents().find('link[rel="stylesheet"]').attr("href",`styles/templates/${e.target.value}.css`);
 
 })
+//lab 8 server.js $.put(/articles) example follow that, you'll want to update your table with the templace_css.
 //use JQuery.post([settings])
 //save the result to the database on preview.html.
-$.post(url, [data], [callback],[type] )
+$.post('/meyou', function(request, response){
+  console.log()
+
+});
 
 
 //use JQuery.get([settings])
