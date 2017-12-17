@@ -13,7 +13,7 @@ var messageLoad = function(callback) {
       //
       var content=results.messages.reduce((html,pairs)=> html+templateScript(pairs),"");
       console.log(content);
-      $("#messageDisplay").append(content);
+      $("#photoPreview").append(content);
       var greetingtemplate = $('#greeting-template').html();
 
       // Compile the template data into a function
