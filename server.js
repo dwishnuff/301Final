@@ -79,7 +79,7 @@ app.post('/searchIcons', function(request, response){
   nounProject.getIconsByTerm(request.body.searchTerm, {limit: 10}, function (err, data) {
       if (err) console.log(err);
       response.send(data.icons);
-      console.log(data.icons)
+      // console.log(data.icons)
       });
 });
 
@@ -110,6 +110,23 @@ app.get('/meyou/:id', function(request, response) {
   });
 });
 
+app.put('/meyou', function(request, reponse){
+  client.query(
+      `UPDATE greeting
+      SET template_css=$1
+      WHERE greeting_id = $2`,
+      [
+        request.body.template_css,
+        request.body.greeting_id
+      ]
+    ).then(function(){
+      response.send('update complete')
+    })
+    .catch(function(err){
+      console.error(err);
+    });
+
+});
 
 function loadGreeting() {
   fs.readFile('./public/data/me+you_data.json',(err, fd) => {
