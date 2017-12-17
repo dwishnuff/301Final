@@ -1,5 +1,11 @@
 var messageLoad = function(callback) {
-  var greetingID=localStorage.getItem("greeting_id")
+  // var greetingID=localStorage.getItem("greeting_id")
+    var url = window.location.href;
+    const messageParts=url.split("?");
+    const queryParameters=messageParts[1].split("=");
+    const greetingID=queryParameters[1];
+
+
   $.get(`/meyou/${greetingID}`)
   .then(
     function(results) {
@@ -24,7 +30,5 @@ var messageLoad = function(callback) {
       $("#greetingDisplay").append(greetingContent);
 
     }
-
-
 )
 };
