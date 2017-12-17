@@ -40,6 +40,8 @@ app.get('/meyou', function (request, response) {
 });
 
 app.post('/meyou', function(request, response) {
+  console.log("### this is the console log for the message send to server.")
+  console.log(request.body);
   client.query(
     `INSERT INTO greeting (url,greeting_message)
     VALUES ($1,$2) RETURNING greeting_id`,

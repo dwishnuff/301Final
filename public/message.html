@@ -22,8 +22,8 @@
   </script>
 
   <script id="greeting-template" type="text/x-handlebars-template">
-    <div class="greeting">{{greeting}}</div>
-    <div class="enteredURL">{{enteredURL}}</div>
+    <div class="greeting">{{greeting_message}}</div>
+    <div class="enteredURL" href={{url}}>{{url}}</div>
   </script>
 
 </head>
@@ -38,7 +38,7 @@
 
     </div>
   </div>
-  <div id greetingDisplay>  </div>
+  <div id=greetingDisplay>  </div>
 
   <div id=shareURL class="button_box2">
     <form class="form-wrapper-2 cf">

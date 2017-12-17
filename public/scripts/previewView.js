@@ -7,7 +7,7 @@ $('input[type=radio]').change(function(e) {
 })
 //use JQuery.post([settings])
 //save the result to the database on preview.html.
-$.post(url, [data], [callback],[type] )
+// $.post(url, [data], [callback],[type] )
 
 
 //use JQuery.get([settings])
