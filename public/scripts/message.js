@@ -3,6 +3,16 @@ var messageLoad = function(callback) {
   $.get(`/meyou/${greetingID}`)
   .then(
     function(results) {
+      if(results.template_css === '' || results.template_css === null){
+        $('link[rel=stylesheet]').attr('href', 'styles/style.css');
+
+      }
+      else{
+
+      $('link[rel=stylesheet]').attr('href', results.template_css);
+
+    }
+
       console.log(results);
       var template = $('#display-template').html();
       console.log(template);
