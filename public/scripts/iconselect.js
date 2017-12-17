@@ -95,8 +95,8 @@ console.log($("#photoPreview").html());
 
 //make it pretty button onClick functions
 function saveMessage () {
-  const url = $("textarea[name=linkPage]").val();
-  const note = $("textarea[name=messageForm]").val();
+  const url = $("textarea[name='linkArea']").val();
+  const note = $("textarea[name='message']").val();
 
   $.post('/meyou', {
     url:url,
