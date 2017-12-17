@@ -3,13 +3,11 @@
 $('input[type=radio]').change(function(e) {
   console.log(e.target.value);
   $('#prettyPreview').contents().find('link[rel="stylesheet"]').attr("href",`styles/templates/${e.target.value}.css`);
-
+  $('#photoPreview').contents().find('link[rel="stylesheet"]').attr("href",`styles/templates/${e.target.value}.css`);
 })
 //lab 8 server.js $.put(/articles) example follow that, you'll want to update your table with the templace_css.
 //use JQuery.post([settings])
 //save the result to the database on preview.html.
-
-
 $.post('/meyou', function(request, response){
   console.log()
 
@@ -17,7 +15,7 @@ $.post('/meyou', function(request, response){
     `UPDATE greeting
     SET
     templace_css=$1`
-    [..
+    [
       request.body.templace_css
     ]
   ).then(function(){
@@ -27,7 +25,6 @@ $.post('/meyou', function(request, response){
     console.error(err);
   });
 });
-
 
 
 //use JQuery.get([settings])
