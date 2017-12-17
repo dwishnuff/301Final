@@ -21,13 +21,13 @@
 
 <h3> Change your display options </h3>
 
-<iframe id = "prettyPreview" src = "message.html">
+<iframe id = "prettyPreview" >
 
 
 </iframe>
 <br>
 <div class = "templates">
-<form = "pick-template">
+<form id= "pick-template">
   <input type="radio" name="template_picker" value="template1"> Template 1
   <input type="radio" name="template_picker" value="template2"> Template 2
   <input type="radio" name="template_picker" value="template3"> Template 3
@@ -35,11 +35,10 @@
 
 </form>
 </div>
-<!-- <form id= "goToMessage" action="message.html">
-    <input type="submit" class="buttonStyle" value="All set?">
+<form action="message.html">
+    <input id= "goToMessage" type="button" class="buttonStyle" value="All set?">
 </form>
- -->
-<a id="goToMessage" href="">All set?.</a>
+
 
 <footer> &copy; 2017  | me + you | share your message </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script> <!-- clipboard.js script -->
