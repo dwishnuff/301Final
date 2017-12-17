@@ -100,3 +100,13 @@ h2 {
   color: #e8a155;
   font-style: italic;
 }
+
+.greeting #greetingDisplay {
+  font-size: 2em;
+  color: #133468;
+}
+
+.enteredURL #greetingDisplay {
+  font-size: 1em;
+  color: #133468;
+}
